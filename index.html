@@ -1,78 +1,107 @@
+<!--
+    Centria Edu - Basics of Web Development
+
+    Original author: Ville Heikkiniemi
+    Modified by: Student Name
+    Last modified: 2026-08-11
+
+    Based on the original course template.
+
+    https://vheikkiniemi.github.io/thiscanbedeleted/s4/
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ahtasham - Web Development</title>
-
+    <meta name="author" content="Ville Heikkiniemi">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="fav.ico">
+
+    <title>Centria Edu | Basics of Web Development</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Basics of Web Development</h1>
-        <p>Learning and practicing modern web development.</p>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="#topics">Ahtasham Hussain</a></li>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="#topics">Topics</a></li>
+
+                    
+
+                    <li><a href="#">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
-        <div class="card">
-            <h2>About My Learning</h2>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
 
-            <p>
-                I am learning the basic concepts of web development
-                and practicing how to create and publish websites.
-            </p>
+                    <span class="label">Basics of Web Development</span>
 
-            <ul>
-                <li>HTML structure and elements</li>
-                <li>CSS styling and layouts</li>
-                <li>GitHub Pages publishing</li>
-            </ul>
-        </div> 
-         <div class="card">
-            <h2>Gallery</h2>
+                    <h1>
+                        Learn how the web works.
+                    </h1>
 
-          <a id="gallery1" href="gallery.html">Gallery</a>
-        </div>
+                    <p>
+                        Start from HTML and CSS and gradually build modern,
+                        responsive and interactive web applications.
+                    </p>
 
-        <div class="card">
-            <h2>My Work Process</h2>
+                    <a href="#topics" class="button">
+                        Start learning
+                    </a>
 
-            <p>
-                These are the main steps I follow when developing
-                and testing my website.
-            </p>
+                </div>
+            </div>
+        </section>
 
-            <ol>
-                <li>Create and edit the HTML files</li>
-                <li>Style the website using CSS</li>
-                <li>Test the website using Live Server</li>
-                <li>Publish the website using GitHub Pages</li>
-            </ol>
-        </div>
+        <section class="topics" id="topics">
+            <div class="container">
 
-        <div class="card">
-            <h2>Tools I Use</h2>
+                <h2>What we will learn</h2>
 
-            <p>
-                These tools help me develop, test, and publish my websites.
-            </p>
+                <div class="cards">
 
-            <ul>
-                <li>Visual Studio Code</li>
-                <li>Live Server</li>
-                <li>GitHub</li>
-            </ul>
-        </div>
+                    <article class="card">
+                        <h3>HTML</h3>
+                        <p>
+                            Learn how to structure web pages using semantic HTML.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>CSS</h3>
+                        <p>
+                            Learn how to style layouts, colors, typography and
+                            responsive interfaces.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <footer>
-        <p>Modified by: Ahtasham </p>
+        <div class="container">
+          <p>&copy; Ahtasham Hussain 2026 Centria Edu</p>
+        </div>
     </footer>
 
 </body>

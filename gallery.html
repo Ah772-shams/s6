@@ -1,70 +1,106 @@
+<!--
+    Centria Edu - Basics of Web Development
+
+    Original author: Ville Heikkiniemi
+    Modified by: Student Name
+    Last modified: 2026-08-11
+
+    Based on the original course template.
+-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ahtasham - Image Gallery S6</title>
-
+    <meta name="author" content="Ville Heikkiniemi">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="fav.ico">
+
+    <title>Centria Edu | Basics of Web Development</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Basics of Web Development</h1>
-        <p>Learning and practicing modern web development.</p>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="photo-gallery">
+    <main>
 
-        <section class="photo-card background-photo">
-            <div class="photo-content">
-                <h2>My First Photograph</h2>
-                <p>
-                    This photograph shows a scene captured with my camera.
-                    The image is used as a faded background to keep the
-                    text easy to read.
-                </p>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+
+                    <span class="label">Basics of Web Development</span>
+
+                    <h1>
+                        Gallery
+                    </h1>
+
+                    <p>
+                        On this page, you will practice integrating images into a web page's overall design.
+                    </p>
+
+                </div>
             </div>
         </section>
 
-        <section class="photo-card">
-            <img
-                class="grayscale-image"
-                src="image/IMG_20260731_143839.jpg"
-                alt="Photograph taken by Ahtasham, displayed in grayscale">
+        <section class="topics" id="topics">
+            <div class="container">
 
-            <h2>Grayscale Photograph</h2>
-            <p>
-                This photograph uses a black-and-white effect created
-                with CSS.
-            </p>
-        </section>
+                <h2>Gallery photos</h2>
 
-        <section class="photo-card">
-            <a
-                href="image/IMG_20260812_205751.jpg"
-                target="_blank"
-                rel="noopener">
-                <img
-                    src="image/IMG_20260812_205751.jpg"
-                    alt="Photograph taken by Ahtasham, clickable to view the original image">
-            </a>
+                <div class="cards">
 
-            <h2>Original Photograph</h2>
-            <p>
-                Click this photograph to open the full-size original
-                image in a separate browser tab.
-            </p>
+                    <article class="card card--background">
+                        <h3>Airport terminal</h3>
+                        <p>
+                            A spacious airport terminal with a wave-patterned ceiling, flight board, travelers, and shops.
+                        </p>
+                    </article>
+
+                    <article class="card card--grayscale">
+                        <h3>Sunset at the marina</h3>
+                        <p>
+                            Red sunset light glows beneath cloudy skies over a marina and tree-lined waterfront.
+                        </p>
+                        <img src="images/2.jpeg" alt="Cloudy evening sky lit red and yellow over a marina, trees, and waterfront road">
+                    </article>
+
+                    <article class="card">
+                        <h3>Snowy courtyard</h3>
+                        <p>
+                            A winter courtyard with snow-covered trees, shrubs, and apartment buildings.
+                        </p>
+                        <a href="images/3.jpeg" target="_blank" rel="noopener" aria-label="Open the full-size snowy courtyard photo in a new tab">
+                            <img src="images/3.jpeg" alt="Snow-covered courtyard with leafless trees, shrubs, and apartment buildings under a pale blue sky">
+                        </a>
+                    </article>
+
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Modified by: Ahtasham Hussain</p>
+        <div class="container">
+          <p>&copy; Ahtasham Hussain 2026 Centria Edu</p>
+        </div>
     </footer>
 
 </body>
